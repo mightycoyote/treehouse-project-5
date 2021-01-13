@@ -3,9 +3,22 @@
     padding: 30px;
 }
 
+//This keeps the input label for accessibility purposes but visually hides it. From https://stackoverflow.com/questions/13551899/how-to-show-a-label-only-to-screen-readers-web-accessiblity
+.search label {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .search input {
     border: 1px solid $aux-color;
     border-radius: 5px;
     height: 3rem;
     padding-left: 1rem;
+    &:focus {
+        outline: 2px solid $fun-color;
+    }
 }

@@ -604,11 +604,23 @@ body {
   padding: 30px;
 }
 
+.search label {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .search input {
   border: 1px solid lightgray;
   border-radius: 5px;
   height: 3rem;
   padding-left: 1rem;
+}
+.search input:focus {
+  outline: 2px solid darkorchid;
 }
 
 /*# sourceMappingURL=styles.css.map */
